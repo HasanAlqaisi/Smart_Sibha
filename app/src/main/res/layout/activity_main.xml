@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainLayout"
+            tools:context=".MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:background="@color/Temp_background">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_47sdp"
+                android:id="@+id/linearMainLayout"
+                android:layout_marginBottom="@dimen/_26sdp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_to_choose"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/_13sdp"
+                    android:paddingEnd="@dimen/_13sdp"
+                    android:textColor="@color/White"
+                    android:onClick="clickButtons"
+                    android:background="@drawable/tasbih_button"
+                    android:id="@+id/tasbihaatBTN"
+            />
+
+            <ImageButton
+                    android:visibility="visible"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:layout_gravity="center"
+                    android:onClick="clickButtons"
+                    android:src="@drawable/add_tasbiha_icon"
+                    android:background="@color/Temp_background"
+                    android:id="@+id/add_tasbiha_icon"/>
+
+            <EditText
+                    android:visibility="gone"
+                    android:id="@+id/add_tasbiha_text"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:background="@drawable/add_tasbiha_text"
+                    android:hint="@string/enter_tasbiha"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColorHint="@android:color/black"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:layout_gravity="center"/>
+
+
+            <Button
+                    android:visibility="gone"
+                    android:enabled="false"
+                    android:id="@+id/alright_icon"
+                    android:onClick="clickButtons"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/alright_icon"
+                    android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageButton
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/replay"
+                    android:id="@+id/replay_icon"
+                    android:onClick="clickButtons"
+                    android:layout_marginEnd="@dimen/_7sdp"/>
+
+            <ImageButton
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/close_icon"
+                    android:id="@+id/close_icon"
+                    android:onClick="clickButtons"
+                    android:layout_marginEnd="@dimen/_7sdp"/>
+        </LinearLayout>
+        <View
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@android:color/white"
+                android:id="@+id/line_view1">
+        </View>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:weightSum="30"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/mosque1"
+                    android:visibility="visible"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:src="@drawable/list_draw"
+            />
+            <TextView
+                    android:visibility="visible"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textSize="@dimen/_25sdp"
+                    android:layout_weight="22"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:id="@+id/choosen_tasbiha_txt" android:fontFamily="@font/costum_font"/>
+            <ImageView
+                    android:id="@+id/mosque2"
+                    android:visibility="visible"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:src="@drawable/list_draw"
+            />
+
+        </LinearLayout>
+        <View
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@android:color/white"
+                android:id="@+id/line_view2">
+        </View>
+
+        <Button
+                android:visibility="visible"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:text="@string/zero"
+                android:textSize="@dimen/_30sdp"
+                android:textColor="@color/White"
+                android:onClick="clickButtons"
+                android:background="@drawable/counterbtn_state"
+                android:id="@+id/counterBTN"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_36sdp"
+        />
+
+    </LinearLayout>

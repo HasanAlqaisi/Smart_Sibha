@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">السبحة الذكية</string>
+    <string name="alsibha">السبحة</string>
+    <string name="click_to_choose">اضغط لاختيار التسبيحة</string>
+    <string name="enter_tasbiha">ادخل التسبيحة...</string>
+    <string name="zero">0</string>
+    <string name="estaghfor_allah">استغفر الله</string>
+</resources>

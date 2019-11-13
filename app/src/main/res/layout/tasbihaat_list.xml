@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:background="@color/Temp_background"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+    <ImageView
+            android:src="@drawable/list_draw"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:id="@+id/imageView1"/>
+
+    <TextView
+            android:text="@string/estaghfor_allah"
+            android:gravity="center"
+            android:textSize="@dimen/_24sdp"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:id="@+id/textView"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/costum_font"/>
+
+    <ImageView
+            android:tag="mySolution"
+            android:src="@drawable/list_draw"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:id="@+id/imageView2"/>
+
+</LinearLayout>
